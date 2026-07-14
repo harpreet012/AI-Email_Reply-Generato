@@ -5,7 +5,7 @@ import { useHistory } from "../store/useHistory";
 import { useSavedReplies } from "../store/useSavedReplies";
 
 const TONES = ["Professional", "Formal", "Friendly", "Concise", "Persuasive"];
-const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API_BASE = import.meta.env.VITE_API_URL || "https://ai-email-reply-generato.onrender.com";
 
 function wordCount(text) {
   const t = text.trim();

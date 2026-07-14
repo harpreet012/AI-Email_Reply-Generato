@@ -18,7 +18,7 @@ import DashboardCard from "../components/DashboardCard";
 import DashboardCharts from "../components/DashboardCharts";
 import QuickActions from "../components/QuickActions";
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+const API = import.meta.env.VITE_API_URL || "https://ai-email-reply-generato.onrender.com/api";
 
 export default function Dashboard() {
   const [stats, setStats] = useState(null);

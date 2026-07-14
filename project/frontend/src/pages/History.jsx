@@ -4,7 +4,7 @@ import axios from "axios";
 import Navbar from "../components/Navbar";
 import { useSavedReplies } from "../store/useSavedReplies";
 
-const API = "http://localhost:5000/api";
+const API = import.meta.env.VITE_API_URL || "https://ai-email-reply-generato.onrender.com/api";
 
 export default function History() {
   const { addSaved } = useSavedReplies();
