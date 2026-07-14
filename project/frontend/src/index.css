@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+:root {
+  --paper: #ece6d6;
+  --paper-raised: #f5f1e6;
+  --ink: #22283b;
+  --ink-soft: #4a5066;
+  --muted: #8a8272;
+  --line: #d8d0bc;
+  --wax: #8c2f1e;
+  --wax-dark: #6e2216;
+  --stamp: #3c5b42;
+  --stamp-light: #e4eadf;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  background-image:
+    radial-gradient(
+      ellipse at top left,
+      rgba(255, 255, 255, 0.35),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse at bottom right,
+      rgba(0, 0, 0, 0.03),
+      transparent 60%
+    );
+  color: var(--ink);
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+}
+
+.font-voice {
+  font-family: "Source Serif 4", serif;
+}
+.font-type {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+@keyframes spin-ring {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.seal-ring {
+  animation: spin-ring 0.9s linear infinite;
+}
